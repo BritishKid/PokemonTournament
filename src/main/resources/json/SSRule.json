@@ -1,0 +1,67 @@
+[
+  {
+    "id": 0,
+    "rule": "Test",
+    "active": false
+  },
+  {
+    "id": 1,
+    "rule": "Singles",
+    "active": false
+  },
+  {
+    "id": 2,
+    "rule": "Doubles",
+    "active": false
+  },
+  {
+    "id": 3,
+    "rule": "Dynamax and Gigamax",
+    "active": false
+  },
+  {
+    "id": 4,
+    "rule": "Ability: Arena Trap",
+    "active": false
+  },
+  {
+    "id": 5,
+    "rule": "Ability: Moody",
+    "active": false
+  },
+  {
+    "id": 6,
+    "rule": "Ability: Shadow Tag",
+    "active": false
+  },
+  {
+    "id": 7,
+    "rule": "Move: Baton Pass",
+    "active": false
+  },
+  {
+    "id": 8,
+    "rule": "Species Clause (A Player cannot have two Pokemon with the same National Pokedex number on a team)",
+    "active": false
+  },
+  {
+    "id": 9,
+    "rule": "Sleep Clause (If a player has already put a Pokemon on his/her opponent's side to sleep and it is still sleeping, another one can't be put to sleep.)",
+    "active": false
+  },
+  {
+    "id": 10,
+    "rule": "Evasion Clause",
+    "active": false
+  },
+  {
+    "id": 11,
+    "rule": "OHKO Clause",
+    "active": false
+  },
+  {
+    "id": 12,
+    "rule": "Endless Battle Clause",
+    "active": false
+  }
+]

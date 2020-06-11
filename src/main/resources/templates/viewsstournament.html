@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Pokemon Tournament</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet"/>
+</head>
+
+<header id="header">
+    <h1><a th:href="@{/}">Pokemon Tournament </a></h1>
+</header>
+
+<section id="banner">
+    <div class="inner">
+
+        <header>
+            <h1 th:text="${tournamentO.name}">Tournament</h1>
+        </header>
+
+        <div>
+            <table class="table table-striped">
+                <tr>
+                    <th>Player Id</th>
+                    <th>Player Name</th>
+                    <th>Player Score</th>
+                </tr>
+                <tr th:each="player : ${tournamentO.playerList}">
+                    <td th:text="${player.playerId}">Player Id</td>
+                    <td th:text="${player.playerName}">Player Name</td>
+                    <td th:text="${player.playerScore}">Player Score</td>
+                </tr>
+            </table>
+            <p>Rules:</p>
+            <ul>
+                <li th:each="rule : ${tournamentO.ruleList}">
+                    <label th:text="${rule.rule}"></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+</html>

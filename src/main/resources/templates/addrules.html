@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Pokemon Tournament</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet"/>
+</head>
+
+<header id="header">
+    <h1><a th:href="@{/}">Pokemon Tournament </a></h1>
+</header>
+
+<section id="banner">
+    <header>
+        <h1 th:text="${tournamentO.name}">Tournament</h1>
+    </header>
+
+    <h2>Select rules.</h2>
+        <form th:action="@{/pokemonss/addrules}" th:object="${tournamentO}" method="post">
+            <input type="hidden" th:field="*{id}">
+            <input type="hidden" th:field="*{name}">
+            <ul>
+                <li th:each="rule : ${rules}">
+                    <input type="checkbox" th:field="*{ruleList}" th:value="${rule.id}">
+                    <label th:text="${rule.rule}"></label>
+                </li>
+            </ul>
+            <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+        </form>
+</section>
+
+</html>

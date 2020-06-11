@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Pokemon Tournament</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet"/>
+</head>
+
+<header id="header">
+    <h1><a th:href="@{/}">Pokemon Tournament </a></h1>
+</header>
+
+<section id="banner">
+<div class="inner">
+    <a href="#main" class="button big alt scrolly" th:href="@{/pokemongo}">Pokemon Go</a>
+    <a href="#main" class="button big alt scrolly" th:href="@{/pokemonss}">Pokemon Sword and Shield</a>
+</div>
+</section>
+
+</html>

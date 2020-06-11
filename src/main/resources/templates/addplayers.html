@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Pokemon Tournament</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet"/>
+</head>
+
+<header id="header">
+    <h1><a th:href="@{/}">Pokemon Tournament </a></h1>
+</header>
+
+<section id="banner">
+    <div class="inner">
+        <h1>Add Players</h1>
+        <h2>Separate each name with a comma ','.</h2>
+        <form  th:action="@{/pokemonss/addplayers}" th:object="${tournamentO}" method="post">
+            <input type="hidden" th:field="*{id}">
+            <p>Names: <input type="text" th:field="*{name}" name="playerName" /></p>
+            <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+        </form>
+    </div>
+</section>
+
+</html>
